@@ -43,6 +43,7 @@ img:responsive {
     color: white;
 }
 
+/* Text settings for name header on mobile*/
 .MyNameHeaderMobile {
     font-size: 8vw;
     font-weight: bold;
