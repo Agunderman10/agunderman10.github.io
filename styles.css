@@ -1,0 +1,9 @@
+/* front page background image */
+.sunsetBackground {
+    background-image: url("Images/Sunset.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
