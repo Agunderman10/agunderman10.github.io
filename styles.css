@@ -45,13 +45,13 @@ img:responsive {
 
 /* Text settings for name header on mobile*/
 .MyNameHeaderSmallScreens {
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 .TitleHeaderSmallScreens {
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: white;
