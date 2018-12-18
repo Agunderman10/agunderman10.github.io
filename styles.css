@@ -43,6 +43,19 @@ img:responsive {
     color: white;
 }
 
+.MyNameHeaderMobile {
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.TitleHeaderMobile {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
 /* set front page background picture to height of the screen */
 .FrontPageHeight {
     height: 100vh;
