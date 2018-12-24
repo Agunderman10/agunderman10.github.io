@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <title>Welcome to the Gundernet</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="indexStyles.css">
-    
+    <head>
+        <title>Welcome to the Gundernet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="indexStyles.css">
+    </head>
+
     <body>
         <!-- NavBar -->
         <div class="w3-top" id="myNavbar">
@@ -68,13 +70,47 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!-- End div for About card -->
 
-            <!-- Begin div for Experience cards -->
-            <div style="margin: 0% 0% 0% 0%" id="experience">
-
+        <!-- Begin div for Experience cards -->
+        <div style="margin: 5% 0% 3% 5%" id="about">
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Experiences</b></h3> 
+                        <div class="col-lg-6">
+                            <div style="margin: 3% 5% 2% 0%" id="experience">
+                                <button class="collapsible card">C#</button>
+                                <div class="content">
+                                    <p>You opened me.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%" id="experience">
+                                <button class="collapsible card">WPF</button>
+                                <div class="content">
+                                    <p>You opened me.</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6">
+                            <div style="margin: 3% 5% 2% 0%" id="experience">
+                                <button class="collapsible card">Git</button>
+                                <div class="content">
+                                    <p>You opened me.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%" id="experience">
+                                <button class="collapsible card">Java</button>
+                                <div class="content">
+                                    <p>You opened me.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        <!-- End div for Experience cards -->
+        <script src="collapsible.js"></script>
         <!-- End Page Content -->
     </body>
 </html>
