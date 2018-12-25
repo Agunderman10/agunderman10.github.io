@@ -46,7 +46,7 @@
     to{ bottom:0; opacity:1 }
   }
   
-  #myDiv {
+  #loaderPageContent {
     display: none;
     text-align: center;
   }
