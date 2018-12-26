@@ -58,6 +58,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* make sure all images are responsive */
@@ -120,6 +121,7 @@ img:responsive {
     transition: 0.3s;
     width: 95%;
     border-radius: 5px;
+    background-color: white;
   }
   
   .card:hover {
