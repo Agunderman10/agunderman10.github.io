@@ -6,5 +6,6 @@ function loader() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("loader-mobile").style.display = "none";
   document.getElementById("loaderPageContent").style.display = "block";
 }
