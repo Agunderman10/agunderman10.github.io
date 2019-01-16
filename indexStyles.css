@@ -179,6 +179,14 @@ img:responsive {
   margin-bottom: 3%;
 }
 
+.flip-card-mobile {
+  background-color: transparent;
+  width: 280px;
+  height: 185px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-bottom: 3%;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -189,6 +197,10 @@ img:responsive {
 }
 
 .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-mobile:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
