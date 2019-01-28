@@ -1,4 +1,4 @@
-//the ninth month is october because javascript months go from 0-11
+//the ninth month is october because Date object months go from 0-11
 var dateToday = new Date();
 var myBirthday = new Date(2000,9,25);
 var age = 0;
