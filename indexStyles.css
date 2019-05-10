@@ -238,4 +238,6 @@ img:responsive {
   background-color: #eeeeee;
   color: black;
   transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
