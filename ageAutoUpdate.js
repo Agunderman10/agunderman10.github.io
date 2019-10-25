@@ -5,13 +5,13 @@ var age = 0;
 
 //if the date today is before october 25 then age starts at -1
 //so we can add the difference of today's year and 2000 to it after to find age
-if(dateToday.getMonth() <= 9 || (dateToday.getMonth() >= 9 && dateToday.getDate() < 25))
+if((dateToday.getMonth() <= 9 && dateToday.getDate() < 25) || (dateToday.getMonth() >= 9 && dateToday.getDate() < 25))
 {
     --age;
 }
 else if (dateToday.getMonth() >= 9 && dateToday.getDate() >= 25)
 {
-    ++age;
+    age = 0;
 }
 
 age = (dateToday.getFullYear() - myBirthday.getFullYear()) + age;
