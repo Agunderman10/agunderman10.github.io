@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Gundernet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="vsDSCcUVFlC6CHRds9mpx9FEEMOKxJ7EPhUZG8MNZGo" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="indexStyles.css">
+    </head>
+
+    <body onload="loader()" style="margin-bottom: -1%;">
+
+        <!-- Begin loader -->
+        <div class="w3-hide-small" id="loader"></div>
+        <div class="w3-hide-medium w3-hide-large" id="loader-mobile"></div>
+        <div style="display: none;" id="loaderPageContent" class="animate-bottom sunsetBackground">
+        <script src="loader.js"></script>
+        <!-- End loader -->
+
+        <!-- NavBar -->
+        <div class="w3-top" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center">
+                <a href="#about" class="w3-bar-item w3-button" style="width:24% !important">ABOUT</a>
+                <a href="#experience" class="w3-bar-item w3-button" style="width:28% !important">EXPERIENCE</a>           
+                <a href="#contact" class="w3-bar-item w3-button" style="width:24% !important">CONTACT</a>
+                <a href="blogs.html" class="w3-bar-item w3-button" style="width:24% !important">BLOGS</a>
+                <!-- 24%, 28%, 24%, 24% -->
+            </div>
+        </div>
+        <!-- End NavBar -->
+
+        <!-- Begin Page Content -->
+        <div class="w3-center FrontPageHeight">
+            <a>
+                <!-- Profile pic for medium and large screens -->
+                <img class="w3-circle mouseoverEffect w3-hide-small " src="Images/me.jpg" alt="Andrew Gunderman" 
+                style="width:15%; margin-top: 5%;">
+                <!-- End profile pic for medium and large screens -->
+
+                <!-- Profile pic for small screens -->
+                <img class="w3-circle w3-hide-large w3-hide-medium mouseoverEffect" src="Images/me.jpg" alt="Andrew Gunderman"
+                style="width:35%; margin-top: 15%;">
+                <!-- End profile pic for small screens -->
+            </a>
+
+            <!-- Headers for large and medium screens -->
+            <h1 class="MyNameHeader mouseoverEffect w3-hide-small" style="margin-top:1%;">ANDREW GUNDERMAN</h1>
+            <h2 class="TitleHeader mouseoverEffect w3-hide-small">FOUNDER, CEO OF SYNCH</h2>
+            <h2 class="TitleHeader mouseoverEffect w3-hide-small">FOUNDER OF SPROUT</h2>
+            <!-- End Headers for large and medium screens -->
+
+            <!-- Headers for small screens -->
+            <h1 class="MyNameHeaderSmallScreens mouseoverEffect w3-hide-large w3-hide-medium" style="margin-top:3%;">ANDREW GUNDERMAN</h1>
+            <h2 class="TitleHeaderSmallScreens mouseoverEffect w3-hide-large w3-hide-medium">FOUNDER, CEO OF SYNCH</h2>
+            <h2 class="TitleHeaderSmallScreens mouseoverEffect w3-hide-large w3-hide-medium">FOUNDER OF SPROUT</h2>
+            <!-- End Headers for small screens-->
+        </div>
+
+        <div id="about"></div>
+        <!-- Begin div for About card -->
+        <div style="margin: 5% 0% -3% 5%">
+            <div class="card">
+                <div class="container">
+                    <div class="col-lg-6">
+                        <h3><b>About</b></h3> 
+                        <p>I am a high school student at Hillsboro High School who will be entering 
+                            college at The Ohio State University studying Computer Science this 
+                            coming fall. This summer, I am interning in the Zero To Sixty program 
+                            at Vora Ventures. Coming from a very small high school without 
+                            programming classes, I have managed to teach myself everything I 
+                            know. My passion, ambition, and hard work have put me in the place 
+                            that I am now and I strive to continue to better myself in every way 
+                            possible. I also am very passionate about helping others, namely 
+                            other high school students who do not receive many opportunities to grow
+                            professionally. As a result, a group of friends and I decided to found 
+                            and build a technology company that acts as a professional networking 
+                            platform for high school students and connects them to highly coveted 
+                            internships, apprenticeships, and other opportunities.</p> 
+                    </div>
+                    <div class="col-lg-6">
+                        <h3><b>Basic Information</b></h3>
+                        <p style="display:inline-block"> <strong>AGE:</strong>&nbsp;<p id="ageAutoUpdate" style="display:inline-block">myAge</p></p>
+                        <p><strong>LOCATION:</strong> Hillsboro, Ohio</p>
+                        <p><strong>SCHOOL:</strong> Hillsboro High School</p>
+                        <p><strong>LANGUAGE:</strong> English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End div for About card -->
+        <script src="ageAutoUpdate.js"></script>
+
+        <div id="experience"></div>
+        <!-- Begin div for Experience cards -->
+        <div style="margin: 5% 0% -3% 5%">
+                <div class="card">
+                    <div class="container">
+                        <h3><b>Programming Related Experience</b></h3> 
+                        <div class="col-lg-6">
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">C#</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">C# was the second language that I began
+                                    learning, the first being Java. It is likely my most in depth
+                                    language and I have used it for a majority of my projects.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">WPF</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I am very experienced with WPF having
+                                    used it for a multitude of applications and having worked with 
+                                    it for most of my programming career. WPF was also the first GUI 
+                                    that I really began to use.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Python</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some limited experience with
+                                    Python. I know basic syntax and have built some simple programs 
+                                    such as a Tab Explosion and some other text based programs.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Unity</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some limited experience with
+                                    Unity. I know how it works and I can build some basic games with
+                                    it. I have built a few basic games so far, but I am looking to
+                                    go deeper into learning about it.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Raspberry Pi</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I own a Raspberry Pi and I have used 
+                                    Idle to do some Python programming on it along with connecting
+                                    it to a monitor, but other than that I have yet to do much else 
+                                    with it. I have plans for other projects that I want to do with
+                                    it.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">C</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a little experience with C. I have
+                                    built mostly text based programs with it so far, but I have an 
+                                    understanding of the basic syntax and pointers.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Data Structures And Algorithms</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have experience with Data Structures and
+                                    Algorithms. I have read through a Data Structures and Algorithms book
+                                    and taken a Princeton Algorithms course. I have experience with
+                                    Stacks, Queues, Graphs, Trees, and Sets along with the more basic 
+                                    Data Structures such as Arrays, Lists, etc. I have experience 
+                                    with some Algorithms such as Bubble sort, Merge sort, Insertion
+                                    sort, Binary Search, Quick find, Quick union, along with 
+                                    Algorithm improvement techniques such as weighting and path
+                                    compression.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">PowerShell</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a basic understanding of 
+                                    powershell and I am able to build small programs to do desired 
+                                    tasks. It is something I am planning on looking into more and 
+                                    learning more about it.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Web Development</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a lot of front end experience
+                                    in web development. I built my high school's Robotics website 
+                                    from scratch. I have experience making animations for the websites
+                                    I make including loaders, flip cards, fade-ins, and other animations.
+                                    I have an artistic eye and I am able to build websites that are 
+                                    pleasing to the eye.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">JavaScript</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some basic understanding of 
+                                    JavaScript. I use JS to help build some animations and I am familiar
+                                    with its syntax. I have not built any applications with just JS yet,
+                                    but I plan to learn soon. I mostly use JS for my websites. The age 
+                                    listing above in the 'About' section is actually a JS program that
+                                    will automatically update my age each year.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">PerfView</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some experience with PerfView. 
+                                    PerfView is a Microsoft program that measures how long it takes for
+                                    a certain task to be completed. This is very useful for performance 
+                                    based applications and it is often used in the real world for 
+                                    Windows applications. I have experience using it and attempting
+                                    to improve the times it outputs to improve performance of my
+                                    applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Git</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a decent amount of experience
+                                    with Git, having worked with it ever since I began programming.
+                                    I have experience with commit, push, fork, clone, merge and pull 
+                                    requests and other commands. I have experiene with Git UI, but 
+                                    I mostly use Git on the command line or in Git Bash.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Java</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I am relatively experienced with Java.
+                                    I have worked through part of an online Princeton Algorithms class
+                                    in Java. Java was my first programming language that I began 
+                                    learning with. I have built Pong, and Level, which is a mobile app
+                                    that would determine if a surface is level or not by the orientation
+                                    of the users device.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Mobile Development</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some experience working with
+                                    Android mobile developement. I worked through some MOOCs online
+                                    and soon after I created an Android app that tells the user if
+                                    their phone is on an even surface or not depending on the 
+                                    orientation of their device.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">C++</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have some basic experience with C++.
+                                    I have built some simple text based applications with C++ and I am
+                                    working on learning more. I also programmed robots with C++. See
+                                    the VEX C++ tab.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Arduino</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have experience with the Arduino. I
+                                    enjoy working with hardware as well as software. I have built 
+                                    multiple programs with the Arduino including a light show,
+                                    a music making application, and others. I have a whole kit of 
+                                    parts and I plan on doing more with the Arduino.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">VEX C++</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">VEX C++ is basically just C++ with some
+                                    external libraries to make motors and the robot Brain work
+                                    correctly. I was the programmer for my robotics team in high school
+                                    and I programmed our robot to complete various tasks with VEX C++. These
+                                    tasks included having the robot climb onto a platform, shooting a ball
+                                    at flags, flipping caps to our team color, and hanging caps on posts.
+                                    I was able to write the code for our robot to complete these tasks
+                                    autonomously and while being controlled by a driver.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">HTML</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a decent amount of experience 
+                                    with HTML. I used HTML to build this website and 
+                                    the Robotics website for my high school.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">CSS</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have experience with CSS and I have
+                                    used it on a multitude of different websites. I enjoy using CSS 
+                                    to create animations and to help style the websites that I create.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">SQL</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have experience with SQL and have taken
+                                    some online courses to work through how it works and to understand
+                                    the basic syntax.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Xamarin</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a little experience with Xamarin, but
+                                    have yet to build anything amazing with it yet. I am looking to learn
+                                    more about it as time goes on.</p>
+                                </div>
+                            </div>
+                            <div style="margin: 3% 5% 2% 0%">
+                                <button class="collapsible card">Racket</button>
+                                <div class="content">
+                                    <p style="margin-top:3%;">I have a decent amount of experience 
+                                    with Racket. Racket is one of the first languages I used, it is
+                                    a functional programming language and so it is very different 
+                                    than other languages that I have used. I have built tons of 
+                                    arbitrary text based programs with Racket and it is where I 
+                                    really learned recursion. I also have learned multiple searching 
+                                    algorithms in Racket such as Bubble sort, Merge sort, and 
+                                    Insertion sort.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End div for Experience cards -->
+        <script src="collapsible.js"></script>
+
+        <!-- Begin div for project portfolio for medium and large screens -->
+        <div style="margin:5% 0% -3% 5%;" class="w3-hide-small">
+            <div class="card">
+                <div class="container" style="padding-bottom:2%;">
+                    <h3><b>Project Portfolio</b></h3>
+                    <div class="col-lg-6" style="padding-left:2%;">
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/SocialMe.png" alt="SocialMe">
+                                </div>
+                                    <a href="https://github.com/Agunderman10/SocialMe">
+                                    <div class="flip-card-back card">
+                                        <h1>SocialMe</h1> 
+                                        <p>Chat app built with C# and WPF to learn more about TCP 
+                                            networking.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/GunderMarket.png" alt="GunderMarket">
+                                </div>
+                                <a href="https://github.com/Agunderman10/GunderMarket">
+                                    <div class="flip-card-back card">
+                                        <h1>GunderMarket</h1> 
+                                        <p>Functioning store application created to demonstrate how 
+                                            easy it would be to create a typical store application that
+                                            one might find at a place like Kroger or McDonalds.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/Calculator.png" alt="Calculator">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Calculator">
+                                    <div class="flip-card-back card">
+                                        <h1>Calculator</h1> 
+                                        <p>Calculator built with C# and WPF as one of my first projects in C#.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/ArduinoBuzzerMusicScale.png" alt="Arduino Buzzer Playing Music Scale">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Arduino-Buzzer-Music-Scale">
+                                    <div class="flip-card-back card">
+                                        <h1>Arduino Buzzer Music Scale</h1> 
+                                        <p>A program for the Arduino that plays through the music scale 
+                                            on a passive buzzer. With some manipulation of the tones
+                                            this program would be able to play whatever type of music 
+                                            that you want it to.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="padding-left:1%;">
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/RoboticsWebsite.png" alt="Hillsboro Robotics Website">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Robotics-Website">
+                                    <div class="flip-card-back card">
+                                        <h1>Hillsboro Robotics Website</h1> 
+                                        <p>Website built for my high school's robotics team. This
+                                            website is linked to the school's official website and
+                                            was entered into a world wide Robotics website competition.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/QuizApp.png" alt="Quiz-App">
+                                </div>
+                                    <a href="https://github.com/Agunderman10/Quiz-App">
+                                    <div class="flip-card-back card">
+                                        <h1>Quiz App</h1> 
+                                        <p>Quiz application built to help elementary math 
+                                            students improve their math skills.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/Level.png" alt="Level">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Level">
+                                    <div class="flip-card-back card">
+                                        <h1>Level</h1> 
+                                        <p>Android application that tells the user if a surface is
+                                            level or not based on the orientation of their device.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/TicTacToe.png" alt="TicTacToe">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Tic-Tac-Toe">
+                                    <div class="flip-card-back card">
+                                        <h1>Tic Tac Toe</h1> 
+                                        <p>A Tic Tac Toe game built with C# and WPF for fun. This was 
+                                            one of my first C# applications.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End div for project portfolio for medium and large screens -->
+
+        <!-- Begin div for project portfolio for small screens -->
+        <div style="margin:5% 0% -3% 5%;" class="w3-hide-medium w3-hide-large">
+            <div class="card">
+                <div class="container" style="padding-bottom:2%;">
+                    <h3><b>Project Portfolio</b></h3>
+                    <div class="col-lg-6" style="padding-left:2%;">
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/SocialMe.png" alt="SocialMe">
+                                </div>
+                                    <a href="https://github.com/Agunderman10/SocialMe">
+                                    <div class="flip-card-back card">
+                                        <h1>SocialMe</h1> 
+                                        <p>Chat app built with C# and WPF to learn more about TCP 
+                                            networking.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/GunderMarket.png" alt="GunderMarket">
+                                </div>
+                                <a href="https://github.com/Agunderman10/GunderMarket">
+                                    <div class="flip-card-back card">
+                                        <h1>GunderMarket</h1> 
+                                        <p>Functioning store application created to demonstrate how 
+                                            easy it would be to create a typical store application that
+                                            one might find at a place like Kroger or McDonalds.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/Calculator.png" alt="Calculator">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Calculator">
+                                    <div class="flip-card-back card">
+                                        <h1>Calculator</h1> 
+                                        <p>Calculator built with C# and WPF as one of my first projects in C#.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/ArduinoBuzzerMusicScale.png" alt="Arduino Buzzer Playing Music Scale">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Arduino-Buzzer-Music-Scale">
+                                    <div class="flip-card-back card">
+                                        <h1>Arduino Buzzer Music Scale</h1> 
+                                        <p>A program for the Arduino that plays through the music scale 
+                                            on a passive buzzer.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="padding-left:1%;">
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/RoboticsWebsite.png" alt="Hillsboro Robotics Website">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Robotics-Website">
+                                    <div class="flip-card-back card">
+                                        <h2>Robotics Website</h2> 
+                                        <p>Website built for my high school's robotics team. This
+                                            website is linked to the school's official website and
+                                            was entered into a world wide Robotics website competition.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/QuizApp.png" alt="Quiz-App">
+                                </div>
+                                    <a href="https://github.com/Agunderman10/Quiz-App">
+                                    <div class="flip-card-back card">
+                                        <h1>Quiz App</h1> 
+                                        <p>Quiz application built to help elementary math 
+                                            students improve their math skills.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/Level.png" alt="Level">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Level">
+                                    <div class="flip-card-back card">
+                                        <h1>Level</h1> 
+                                        <p>Android application that tells the user if a surface is
+                                            level or not based on the orientation of their device.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flip-card-mobile card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img style="width:100%;" src="Images/TicTacToe.png" alt="TicTacToe">
+                                </div>
+                                <a href="https://github.com/Agunderman10/Tic-Tac-Toe">
+                                    <div class="flip-card-back card">
+                                        <h1>Tic Tac Toe</h1> 
+                                        <p>A Tic Tac Toe game built with C# and WPF for fun. This was 
+                                            one of my first C# applications.
+                                        </p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End div for project portfolio for small screens -->
+
+        <!-- Begin div for Contact card -->
+        <div style="margin: 5% 0% 0% 5%; padding-bottom: 3%;" id="contact">
+            <div class="card">
+                <div class="container">
+                    <h3><b>Contact</b></h3>
+                    <p><strong>EMAIL:</strong> <a style="color:black" href="mailto:agunderman10@gmail.com">agunderman10@gmail.com</a> </p>
+                    <p><strong>SNAPCHAT:</strong> agunderman22 </p>
+                    <p><strong>INSTAGRAM:</strong> agunderman10</p>
+                    <p><strong>GITHUB:</strong> <a style="color:black" href="https://github.com/Agunderman10"> agunderman10 </a></p>
+                    <p><strong>LINKEDIN:</strong> <a style="color:black" href="https://linkedin.com/in/andrew-gunderman"> andrew-gunderman </a></p>
+                </div>
+            </div>
+        </div>
+            <!-- End div for Contact card -->
+
+            <!-- Signature for medium and large screens -->
+            <div class="w3-hide-small">
+                <h5 style="color:white; text-align: center;">Website created 
+                    by Andrew Gunderman. Have questions? Contact me at 
+                    <a style="color:white;" href="mailto:agunderman10@gmail.com"> 
+                        Agunderman10@gmail.com </a></h5>
+            </div>
+            <!-- End Signature for medium and large screens -->
+
+            <!-- Signature for small screens -->
+            <div class="w3-hide-medium w3-hide-large">
+                <h5 style="color:white; text-align: center;">Website created 
+                    by Andrew Gunderman. Have questions? Contact me at 
+                    <a style="color:white;" href="mailto:agunderman10@gmail.com"> 
+                        Agunderman10@gmail.com </a></h5>
+            </div>
+            <!-- End Signature for small screens -->
+
+        </div>
+        <!-- End Page Content -->
+
+    </body>
+</html>
