@@ -1,0 +1,20 @@
+.appContainer {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-style: italic;
+}
+
+.headerImage {
+  width: 5vw;
+  border-radius: 50px;
+}
+
+.socialsImage {
+  width: 2vh;
+  margin: 5px;
+}

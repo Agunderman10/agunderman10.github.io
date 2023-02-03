@@ -1,21 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Andrew Gunderman's Website",
+  "name": "Andrew Gunderman's Personal Website",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://pbs.twimg.com/profile_images/1603544995205636096/cL0Mq9Sw_400x400.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "AndrewPic.jpg",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
