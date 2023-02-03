@@ -10,11 +10,11 @@
 }
 
 .headerImage {
-  width: 5vw;
-  border-radius: 50px;
+  width: 15vh;
+  border-radius: 100px;
 }
 
 .socialsImage {
-  width: 2vh;
+  width: 4vh;
   margin: 5px;
 }
